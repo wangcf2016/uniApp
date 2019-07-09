@@ -1,0 +1,36 @@
+<template name="e219bcce">
+  <view class="_view data-v-3491f5a8 indexlist" wx:if="{{indexlistshow}}">
+    <view class="_view data-v-3491f5a8 indexlist-m {{[  indexlistshow ? 'indexlistfadein' : '',  indexlisthide ? 'indexlistfadeout' : '']}}"></view>
+    <view class="_view data-v-3491f5a8 indexlist-c {{[indexlistshow ? 'indexlistshow' : '', indexlisthide ? 'indexlisthide' : '']}}">
+      <view class="_view data-v-3491f5a8 header">
+        <view class="_view data-v-3491f5a8 header-i"></view>
+        <view class="_view data-v-3491f5a8 header-title">{{title}}</view>
+        <view class="_view data-v-3491f5a8 header-i" bindtap="handleProxy" hover-class="hover-c" data-eventid="{{'0'}}" data-comkey="{{$k}}">关闭</view>
+      </view>
+      <view class="_view data-v-3491f5a8 sh">
+        <input bindinput="handleProxy" placeholder="请输入拼音首字母或名称筛选" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_input data-v-3491f5a8" />
+      </view>
+      <view class="_view data-v-3491f5a8 indexlist-c-b">
+        <scroll-view scroll-y="{{true}}" scroll-into-view="{{toIndex}}" wx:if="{{searchVal == ''}}" class="_scroll-view data-v-3491f5a8">
+          <block wx:key="i" key="{{i}}" wx:for="{{listv}}" wx:for-index="i" wx:for-item="v">
+            <view class="_view data-v-3491f5a8 c-b-index" id="{{i}}">{{i}}</view>
+            <block wx:key="i2" key="{{i2}}" wx:for="{{v}}" wx:for-index="i2" wx:for-item="v2">
+              <view class="_view data-v-3491f5a8 c-b-text" data-d="{{v2}}" bindtap="handleProxy" data-eventid="{{'2-'+i+'-'+i2}}" data-comkey="{{$k}}">{{v2[showtext]}}</view>
+            </block>
+          </block>
+        </scroll-view>
+        <scroll-view scroll-y="{{true}}" wx:if="{{searchVal != ''}}" class="_scroll-view data-v-3491f5a8">
+          <block wx:key="i" key="{{i}}" wx:for="{{listsv}}" wx:for-index="i" wx:for-item="v">
+            <view class="_view data-v-3491f5a8 c-b-text" data-d="{{v}}" bindtap="handleProxy" data-eventid="{{'3-'+i}}" data-comkey="{{$k}}">{{v[showtext]}}</view>
+          </block>
+        </scroll-view>
+        <view class="_view data-v-3491f5a8 b-index" bindtouchmove="handleProxy" bindtouchstart="handleProxy" bindtouchend="handleProxy" wx:if="{{searchVal == ''}}" data-eventid="{{'4'}}" data-comkey="{{$k}}">
+          <block wx:key="i" key="{{i}}" wx:for="{{index}}" wx:for-index="i" wx:for-item="v">
+            <view class="_view data-v-3491f5a8 b-index-text" data-i="{{v}}">{{v}}</view>
+          </block>
+        </view>
+        <view class="_view data-v-3491f5a8 show-index" wx:if="{{showToIndex}}">{{toIndex}}</view>
+      </view>
+    </view>
+  </view>
+</template>

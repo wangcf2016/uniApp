@@ -1,0 +1,502 @@
+.container{
+}
+/*新增页面开始*/
+.view-one{
+	text-align: left;
+	padding: 0 40rpx;
+}
+.view-one>view{
+	display: inline-block;
+	font-size: 32rpx;
+	margin: 30rpx 0 20rpx 0;
+}
+.view-one .icon-edit{
+	font-size: 36rpx;
+	color: #999;
+	margin-right: 20rpx;
+}
+.view-two{
+	overflow: hidden;
+	padding: 0 60rpx 0 40rpx;
+}
+.view-two>textarea{
+	display: inline-block;
+	width: 100%;
+	background-color: #fff;
+	height: 200rpx;
+	border: 1rpx dashed #ccc;
+	padding: 10rpx;
+	text-align: left;
+}
+.view-three{
+	text-align: left;
+	padding: 0 20rpx 0 40rpx;
+}
+.view-three-top>view{
+	display: inline-block;
+	font-size: 32rpx;
+	margin: 30rpx 0 20rpx 0;
+}
+.view-three .icon-tupian{
+	font-size: 36rpx;
+	color: #999;
+	margin-right: 20rpx;
+}
+.view-three-list{
+	width: 100%;
+	min-height: 210rpx;
+	overflow: hidden;
+}
+.view-three-list>view{
+	display: inline-block;
+	text-align: left;
+	float: left;
+}
+.view-three-list-for>image{
+	display: inline-block;
+	width: 210rpx;
+	height: 210rpx;
+	background-color: #fff;
+	margin-right: 20rpx;
+}
+.view-three-list-index{
+	display: inline-block;
+	width: 210rpx;
+	height: 210rpx;
+	background-color: #fff;
+}
+.view-three-list-index{
+	text-align: center !important;
+	color: #999;
+}
+.view-three-list-index>view{
+	line-height: 60rpx;
+}
+.view-three-list-index .icon-camera{
+	font-size: 70rpx;
+	margin-top: 50rpx;
+}
+.view-yuyin{
+	text-align: left;
+	padding: 0 40rpx;
+}
+.view-yuyin>view{
+	display: inline-block;
+	font-size: 32rpx;
+	margin: 30rpx 0 20rpx 0;
+}
+.view-yuyin .icon-audio{
+	font-size: 36rpx;
+	color: #999;
+	margin-right: 20rpx;
+}
+.view-yuyin-content{
+	text-align: left;
+	padding: 0 40rpx;
+	position: relative;
+}
+.view-yuyin-content>view{
+	display: inline-block;
+}
+.view-yuyin-content .icon-yuyinmsg{
+	position: absolute;
+	font-size: 38rpx;
+	color: #fff;
+	top: 8rpx;
+	left: 60rpx;
+}
+.view-yuyin-bg{
+	width: 300rpx;
+	height: 60rpx;
+	background: linear-gradient(to left, #ffb700, #ffd763);
+	border-radius: 50rpx;
+}
+.view-yuyin-text{
+	position: absolute;
+	left: 350rpx;
+	top: 8rpx;
+}
+.view-yuyin-sub{
+	position: absolute;
+	left: 385rpx;
+	top: 8rpx;
+}
+.view-four,.view-six{
+	text-align: left;
+	padding: 0 40rpx;
+}
+.view-four-title,.view-four-check,.view-six{
+	margin: 10rpx 0;
+}
+.view-four-title>view,.view-six>view{
+	display: inline-block;
+	font-size: 32rpx;
+}
+.view-four-title .icon-dizhimore,.view-six .icon-shandian{
+	font-size: 40rpx;
+	color: #999;
+}
+.view-four-title>sub,.view-six>sub{
+	color: #f64500;
+}
+.view-four-check{
+	position: relative;
+}
+.view-four-check>view{
+	display: inline-block;
+}
+.view-four-check-now{
+	color: #999;
+}
+.view-four-check-text{
+	color: #3399ff;
+}
+.view-four-check-btn{
+	color: #3399ff;
+	position: absolute;
+	top: -5rpx;
+	right: 0;
+	border: 1rpx solid #3399ff;
+	padding: 5px 20rpx;
+	border-radius: 30rpx;
+}
+.view-four-check .icon-didian{
+	color: #3399ff;
+	font-size: 30rpx;
+	margin: 0 10rpx;
+}
+.view-five{
+	padding: 0 50rpx 0 40rpx;
+}
+.view-five>textarea{
+	display: inline-block;
+	width: 100%;
+	background-color: #fff;
+	height: 50rpx;
+	border: 1rpx dashed #ccc;
+	padding-top: 20rpx;
+	padding-left: 10rpx;
+	margin-top: 10rpx;
+	text-align: left;
+}
+.view-six-list{
+	text-align: left;
+	padding: 0 40rpx;
+	margin-top: 20rpx;
+}
+.view-six-list>view{
+	display: inline-block;
+	padding: 10rpx 30rpx;
+	border: 1rpx solid #999;
+	margin-right: 20rpx;
+	border-radius: 30rpx;
+	color: #999;
+}
+.isCheck{
+	color: #f6a600 !important;
+	border: 1rpx solid #f6a600 !important;
+}
+.view-seven{
+	width: 100%;
+	text-align: center;
+	padding: 60rpx 0 30rpx 0;
+}
+.view-seven .icon-audio{
+	display: inline-block;
+	font-size: 60rpx;
+	width: 120rpx;
+	height: 120rpx;
+	background-color: #3399ff;
+	color: #fff;
+	border-radius: 50%;
+	line-height: 120rpx;
+	box-shadow: 1px 1px 15px #3399ff;
+}
+/*新增页面结束*/
+/*列表页面开始*/
+.list-top-warp{
+	padding: 0 40rpx;
+}
+.list-top{
+	width: 100%;
+	height: 60rpx;
+	line-height: 60rpx;
+	margin-top: 30rpx;
+	color: #1f95fd;
+}
+.list-top>view{
+	width: 33%;
+	background-color: #fff;
+	border: 1rpx solid #1f95fd;
+	display: inline-block;
+	text-align: center;
+}
+.list-top>view:first-child{
+	border-top-left-radius: 6rpx;
+	border-bottom-left-radius: 6rpx;
+	border-right: none;
+}
+.list-top>view:last-child{
+	border-top-right-radius: 6rpx;
+	border-bottom-right-radius: 6rpx;
+	border-left: none;
+}
+.chooseTab{
+	background-color: #1f95fd !important;
+	color: #fff !important;
+}
+.list-center-warp{
+	padding: 0 40rpx;
+	margin-top: 10rpx;
+}
+.list-center{
+	width: 100%;
+	padding-bottom: 100rpx;
+}
+.list-bottom{
+	position: fixed;
+	width: 100%;
+	height: 80rpx;
+	line-height: 80rpx;
+	background: linear-gradient(to left, #30a5f9, #49bdf2);
+	text-align: center;
+	bottom: 0;
+	color: #fff;
+	font-size: 32rpx;
+	z-index: 9999;
+}
+.list-bottom>view{
+	display: inline-block;
+}
+.list-bottom .icon-jia{
+	font-size: 40rpx;
+	position: absolute;
+	left: 245rpx;
+}
+.list-center-for-top>view{
+	display: inline-block;
+}
+.list-center-for-bottom>view{
+	display: inline-block;
+	width: 100%;
+	min-height: 60rpx;
+	text-align: left;
+	position: relative;
+	line-height: 60rpx;
+	padding: 0 30rpx;
+}
+.list-center-for-bottom>view:first-child{
+	margin-top: 10rpx;
+}
+.list-center-for-bottom>view:last-child{
+	margin-bottom: 10rpx;
+}
+.list-center-for-top{
+	border-bottom: 1rpx solid #ccc;
+	padding: 30rpx 30rpx 0 30rpx;
+	overflow: hidden;
+	text-align: left;
+	min-height: 60rpx;
+	position: relative;
+}
+.list-center-for .icon-didian{
+	color: #999;
+	font-size: 32rpx;
+	margin-right: 6rpx;
+}
+.list-center-for{
+	position: relative;
+	background-color: #fff;
+	margin-top: 20rpx;
+}
+.list-center-for-type1{
+	padding: 6rpx 25rpx;
+	border-radius: 30rpx;
+	background-color: #ffc834;
+	color: #fff;
+	position: absolute;
+	right: 30rpx;
+	top: 20rpx;
+}
+.list-center-for-type2{
+	padding: 6rpx 25rpx;
+	border-radius: 30rpx;
+	background-color: #ff5d54;
+	color: #fff;
+	position: absolute;
+	right: 30rpx;
+	top: 20rpx;
+}
+.list-center-for-bottom-round{
+	width: 15rpx;
+	height: 15rpx;
+	border-radius: 50%;
+	background-color: #1bb4ff;
+	position: absolute;
+	left: 30rpx;
+	top: 25rpx;
+}
+.list-center-for-bottom-text{
+	color: #999;
+	margin-left: 20rpx;
+}
+.list-center-for-bottom-textRight{
+	position: absolute;
+	right: 95rpx;
+	top: 0;
+}
+.dot-left{
+	position: absolute;
+	width: 40rpx;
+	height: 40rpx;
+	background-color: #f7fcff;
+	border-radius: 50%;
+	top: 70rpx;
+	left: -20rpx;
+	z-index: 9999;
+}
+.dot-right{
+	position: absolute;
+	width: 40rpx;
+	height: 40rpx;
+	background-color: #f7fcff;
+	border-radius: 50%;
+	top: 70rpx;
+	right: -20rpx;
+}
+/*列表页面结束*/
+/*详情页面结束*/
+.view-seven-detail{
+	overflow: hidden;
+	text-align: center;
+	padding: 40rpx;
+}
+.view-seven-btn{
+	width: 100%;
+	height: 80rpx;
+	line-height: 80rpx;
+	font-size: 32rpx;
+	background: linear-gradient(to left, #30a5f9, #49bdf2);
+	color: #fff;
+	border-radius: 6rpx;
+}
+.detail-textarea{
+	color: #333;
+}
+.view-four .icon-didian{
+	font-size: 36rpx;
+	color: #999;
+	margin-right: 20rpx;
+}
+.view-six{
+	text-align: left;
+	padding: 0 40rpx;
+}
+.view-six>view{
+	display: inline-block;
+	font-size: 32rpx;
+	margin: 10rpx 0;
+}
+.view-six .icon-task{
+	font-size: 40rpx;
+	color: #999;
+	margin-right: 20rpx;
+}
+.view-eight-detail{
+	overflow: hidden;
+	padding: 0 40rpx;
+}
+.view-eight-detail-warp{
+	width: 100%;
+	background-color: #fff;
+	border: 1rpx dashed #ccc;
+}
+.view-eight-detail-warp-list{
+	padding: 20rpx 20rpx 0 20rpx;
+	text-align: left;
+}
+.view-eight-detail-warp-list>view{
+	position: relative;
+}
+.view-eight-detail-warp-list>view>view{
+	display: inline-block;
+	padding: 10rpx 0;
+}
+.record-labal{
+	color: #999;
+}
+.record-labal-text1{
+	position: absolute;
+	left: 140rpx;
+	top: 0;
+	color: #e94f4f;
+}
+.record-labal-text2{
+	position: absolute;
+	left: 140rpx;
+	top: 0;
+}
+.record-labal-text3{
+	position: absolute;
+	left: 140rpx;
+	top: 0;
+	color: #1aad19;
+}
+.view-eight-detail-warp-for{
+	padding: 0 20rpx;
+	text-align: left;
+	position: relative;
+	padding-bottom: 10rpx;
+}
+.view-eight-detail-warp-for-left{
+	position: relative;
+}
+.view-eight-detail-warp-for-right{
+	
+}
+.view-eight-detail-warp-for-right>view{
+	position: relative;
+	padding: 10rpx 0;
+}
+.view-eight-detail-warp-for-right>view>view>view{
+	display: inline-block;
+}
+.record-labal-detail{
+	color: #999;
+	padding-left: 140rpx;
+	margin-right: 10rpx;
+}
+.detail-round{
+	width: 20rpx;
+	height: 20rpx;
+	border-radius: 50%;
+	background-color: #1f95fd;
+	position: absolute;
+	left: 40rpx;
+	top: 20rpx;
+}
+.detail-dottedLine{
+	height: 180rpx;
+	border-right: 2rpx dashed #1f95fd;
+	position: absolute;
+	left: 50rpx;
+	top: 30rpx;
+}
+.boederNone{
+	border-right:none !important;
+}
+.view-nine-detail{
+	text-align: left;
+	padding: 0 40rpx;
+}
+.view-nine-detail>view{
+	display: inline-block;
+	font-size: 32rpx;
+	margin: 30rpx 0 20rpx 0;
+}
+.view-nine-detail .icon-msg{
+	font-size: 36rpx;
+	color: #999;
+	margin-right: 20rpx;
+}
+/*详情页面结束*/

@@ -1,0 +1,29 @@
+<template name="bad75078">
+  <view class="_view data-v-7733aad3">
+    <view class="_view data-v-7733aad3 container">
+      <view class="_view data-v-7733aad3 topView" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-7733aad3 iconfont icon-dizhimore"></view>
+        <view class="_view data-v-7733aad3 address">地点</view>
+        <view class="_view data-v-7733aad3 checkAddress">{{selectName || "选择地点"}}</view>
+        <view class="_view data-v-7733aad3 iconfont icon-rightLine"></view>
+      </view>
+      <view class="_view data-v-7733aad3 list">
+        <view class="_view data-v-7733aad3 listHead">
+          <view class="_view data-v-7733aad3">任务周期</view>
+          <view class="_view data-v-7733aad3">频次</view>
+          <view class="_view data-v-7733aad3">指派人员</view>
+        </view>
+        <view class="_view data-v-7733aad3 listFor">
+          <view class="_ul data-v-7733aad3 list_ul">
+            <view wx:key="index" key="{{index}}" wx:for="{{listData}}" wx:for-index="index" wx:for-item="list" class="_li data-v-7733aad3 {{[list.type == '3' ? 'fontColor' : '']}}">
+              <label class="_span data-v-7733aad3 iconfont {{[list.type == '1' ? 'icon-rightbg' : '']}}"></label>
+              <view class="_view data-v-7733aad3 lineHeight">{{list.time}}</view>
+              <view class="_view data-v-7733aad3">{{list.num}}</view>
+              <view class="_view data-v-7733aad3">{{list.man}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,8 @@
+@import "../../common/vendor.wxss";
+
+.container > view {
+  margin: 20rpx;
+  padding: 10rpx;
+  background-color: #999;
+  color: #fff;
+}

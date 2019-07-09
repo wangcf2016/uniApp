@@ -1,0 +1,35 @@
+<template name="ec215ba0">
+  <view class="_view data-v-e5d3c602">
+    <view class="_view data-v-e5d3c602 container">
+      <view class="_view data-v-e5d3c602 iconfont icon-we" style="font-size: 32rpx;"></view>
+      <view class="_view data-v-e5d3c602">icon加载成功</view>
+      <view class="_view data-v-e5d3c602">测试选择组件/单选或多选</view>
+      <view bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_view data-v-e5d3c602">点我单选-{{singleName || '无选择'}}</view>
+      <view bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_view data-v-e5d3c602">点我多选-{{moreName || '无选择'}}</view>
+      <view class="_view data-v-e5d3c602 section">
+        <view class="_view data-v-e5d3c602 section__title">时间选择器</view>
+        <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_picker data-v-e5d3c602">
+          <view class="_view data-v-e5d3c602 picker"> 当前选择: {{time}} </view>
+        </picker>
+      </view>
+      <view class="_view data-v-e5d3c602 section">
+        <view class="_view data-v-e5d3c602 section__title">日期选择器</view>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_picker data-v-e5d3c602">
+          <view class="_view data-v-e5d3c602 picker"> 当前选择: {{date}} </view>
+        </picker>
+      </view>
+      <view bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_view data-v-e5d3c602">拍照</view>
+      <view class="_view data-v-e5d3c602">
+        <button bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_button data-v-e5d3c602">开始录音</button>
+        <button bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_button data-v-e5d3c602">停止录音</button>
+        <button bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_button data-v-e5d3c602">播放录音</button>
+      </view>
+      <view bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" class="_view data-v-e5d3c602">定位</view>
+      <view class="_view data-v-e5d3c602">{{longitude}}</view>
+      <view class="_view data-v-e5d3c602">{{latitude}}</view>
+      <view bindtap="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}" class="_view data-v-e5d3c602">前往联系人</view>
+      <view bindtap="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}" class="_view data-v-e5d3c602">自定义Picker</view>
+      <view bindtap="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}" class="_view data-v-e5d3c602">蹲点任务列表</view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,1 @@
+<import src="/pages/toured/select.vue.wxml" /><template is="235a7f7a" data="{{ ...$root['0'], $root }}"/>

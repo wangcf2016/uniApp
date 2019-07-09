@@ -1,0 +1,18 @@
+<import src="/components/picker/index.vue.wxml" />
+<template name="355c8d20">
+  <view class="_view data-v-d1e1c79e mvpue-picker">
+    <view class="_view data-v-d1e1c79e page-hd">
+      <view class="_view data-v-d1e1c79e page-title">mvpue-picker 示例</view>
+      <view class="_view data-v-d1e1c79e page__desc">选中的值:</view>
+      <view class="_view data-v-d1e1c79e picker-text">{{pickerText}}</view>
+    </view>
+    <view class="_view data-v-d1e1c79e page-bd">
+      <button type="default" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-d1e1c79e">单列选择</button>
+      <button type="default" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-d1e1c79e">时间选择</button>
+      <button type="default" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_button data-v-d1e1c79e">多列选择</button>
+      <button type="default" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_button data-v-d1e1c79e">二级联动选择</button>
+      <button type="default" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_button data-v-d1e1c79e">三级联动选择</button>
+    </view>
+    <template ref="mpvuePicker" bindonChange="handleProxy" bindonConfirm="handleProxy" bindonCancel="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="32e69adb"></template>
+  </view>
+</template>

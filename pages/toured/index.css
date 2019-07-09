@@ -1,0 +1,88 @@
+.topView{
+	height: 100rpx;
+	width: 100%;
+	background-color: #ffffff;
+	margin: 20rpx 0;
+	position: relative;
+}
+.icon-dizhimore{
+	position: absolute;
+	left: 20rpx;
+	top: 30rpx;
+	font-size: 42rpx;
+	color: #51a5fd;
+}
+.icon-rightLine{
+	position: absolute;
+	right: 20rpx;
+	top: 35rpx;
+	font-size: 36rpx;
+	color: #999;
+}
+.address{
+	position: absolute;
+	left: 80rpx;
+	top: 35rpx;
+	font-size: 32rpx;
+}
+.checkAddress{
+	position: absolute;
+	right: 70rpx;
+	top: 35rpx;
+	color: #999;
+}
+.icon-rightbg{
+	color: #ffb700;
+}
+.listHead{
+	background-color: #8dc1fe;
+	margin: 40rpx 20rpx 0 20rpx;
+	text-align: center;
+	padding: 20rpx;
+	border-radius: 6rpx;
+}
+.listHead>view{
+	display: inline-block;
+	color: #fff;
+	width: 200rpx;
+}
+.listFor{
+	background-color: #fff;
+	margin: 0 20rpx;
+	text-align: center;
+	padding: 0 20rpx;
+}
+.list_ul>li{
+	position: relative;
+	padding: 20rpx;
+	border-bottom: 1rpx dashed #ccc;
+	min-height: 100rpx;
+}
+.list_ul>li:last-child{
+	border-bottom: none !important;
+}
+.fontColor{
+	color: #999;
+}
+.list_ul>li>view{
+	display: inline-block;
+	width: 200rpx;
+	height: 100rpx;
+	float: left;
+	line-height: 100rpx;
+}
+.lineHeight{
+	line-height: 48rpx !important;
+	margin-left: 20rpx;
+}
+.list_ul>li>view:last-child{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.icon-rightbg{
+	position: absolute;
+	left: 0;
+	top: 50rpx;
+	font-size: 38rpx;
+}

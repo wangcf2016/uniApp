@@ -1,0 +1,28 @@
+<template name="3762d46e">
+  <view class="_view data-v-523857cc">
+    <view class="_view data-v-523857cc page-section" wx:if="{{type == 'more'}}">
+      <view class="_view data-v-523857cc uni-list">
+        <checkbox-group bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_checkbox-group data-v-523857cc">
+          <label class="_label data-v-523857cc uni-list-cell uni-list-cell-pd" wx:key="item.value" key="{{item.value}}" wx:for="{{items}}" wx:for-index="index" wx:for-item="item">
+            <view class="_view data-v-523857cc">
+              <checkbox color="#ffb600" style="color:#000" value="{{item.value}}" checked="{{item.checked}}" class="_checkbox data-v-523857cc"></checkbox>
+            </view>
+            <view class="_view data-v-523857cc">{{item.name}}</view>
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+    <view wx:else class="_view data-v-523857cc page-section">
+      <view class="_view data-v-523857cc uni-list">
+        <radio-group bindchange="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_radio-group data-v-523857cc">
+          <label class="_label data-v-523857cc uni-list-cell uni-list-cell-pd" wx:key="item.value" key="{{item.value}}" wx:for="{{items}}" wx:for-index="index" wx:for-item="item">
+            <view class="_view data-v-523857cc">
+              <radio color="#ffb600" value="{{item.value}}" checked="{{item.checked}}" class="_radio data-v-523857cc" />
+            </view>
+            <view class="_view data-v-523857cc">{{item.name}}</view>
+          </label>
+        </radio-group>
+      </view>
+    </view>
+  </view>
+</template>

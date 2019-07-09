@@ -1,0 +1,3 @@
+<import src="/components/select/index.vue.wxml" />
+<import src="/components/indexlist/index.vue.wxml" />
+<import src="/components/picker/index.vue.wxml" />

@@ -1,0 +1,42 @@
+<template name="67fa5db4">
+  <view class="_view data-v-3c99b0c3">
+    <view class="_view data-v-3c99b0c3 container">
+      <view class="_view data-v-3c99b0c3 list-top-warp">
+        <view class="_view data-v-3c99b0c3 list-top">
+          <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{tabArr}}" wx:for-index="index" wx:for-item="item" class="_view data-v-3c99b0c3 {{[item.choose ? 'chooseTab' : '']}}">{{item.text}}</view>
+        </view>
+      </view>
+      <view class="_view data-v-3c99b0c3 list-center-warp">
+        <view class="_view data-v-3c99b0c3 list-center">
+          <scroll-view class="_scroll-view data-v-3c99b0c3 index-bd" scroll-y>
+            <view class="_view data-v-3c99b0c3 list-center-for" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="list">
+              <view class="_view data-v-3c99b0c3 list-center-for-top">
+                <view class="_view data-v-3c99b0c3 iconfont icon-didian"></view>
+                <view class="_view data-v-3c99b0c3 list-center-for-text">{{list.address}}</view>
+                <view class="_view data-v-3c99b0c3 {{[list.type == '1' ? 'list-center-for-type1' : 'list-center-for-type2']}}">{{list.typeText}}</view>
+              </view>
+              <view class="_view data-v-3c99b0c3 list-center-for-bottom">
+                <view class="_view data-v-3c99b0c3">
+                  <view class="_view data-v-3c99b0c3 list-center-for-bottom-round"></view>
+                  <view class="_view data-v-3c99b0c3 list-center-for-bottom-text">上报时间</view>
+                  <view class="_view data-v-3c99b0c3 list-center-for-bottom-textRight">{{list.time}}</view>
+                </view>
+                <view class="_view data-v-3c99b0c3">
+                  <view class="_view data-v-3c99b0c3 list-center-for-bottom-round"></view>
+                  <view class="_view data-v-3c99b0c3 list-center-for-bottom-text">上报人</view>
+                  <view class="_view data-v-3c99b0c3 list-center-for-bottom-textRight">{{list.name}}</view>
+                </view>
+              </view>
+              <view class="_view data-v-3c99b0c3 dot-left"></view>
+              <view class="_view data-v-3c99b0c3 dot-right"></view>
+            </view>
+          </scroll-view>
+        </view>
+      </view>
+      <view class="_view data-v-3c99b0c3 list-bottom" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-3c99b0c3 iconfont icon-jia"></view>
+        <view class="_view data-v-3c99b0c3 bottomText">新增随手拍</view>
+      </view>
+    </view>
+  </view>
+</template>

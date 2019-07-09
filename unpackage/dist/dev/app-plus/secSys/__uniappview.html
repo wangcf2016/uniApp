@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>View</title>
+    <style>
+        * {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+    <script>
+        var __wxConfig = {"debug":false,"appname":"","entryPagePath":"pages/takePic/add.html","page":{"pages/takePic/add.html":{"window":{"navigationBarTitleText":"随手拍","titleNView":{"float":"right","buttons":[{"text":"确定","color":"#51a5fd","fontSize":"16px"}]}}},"pages/takePic/list.html":{"window":{"navigationBarTitleText":"随手拍记录","bounce":"none"}},"pages/takePic/detail.html":{"window":{"navigationBarTitleText":"随手拍详情"}},"pages/takePic/select.html":{"window":{"navigationBarTitleText":"请选择地点","titleNView":{"buttons":[{"text":"确定","color":"#51a5fd","fontSize":"16px"}]}}},"pages/home/index.html":{"window":{"navigationBarTitleText":"巡检系统","titleNView":{"float":"right","autoBackButton":"false","buttons":[{"float":"right","text":"","fontSize":"26px","fontSrc":"/static/fonts/iconfont.ttf","color":"#2ca1fa"},{"float":"left","text":"","fontSize":"30px","fontSrc":"/static/fonts/iconfont.ttf","color":"#ffbf18"}]},"bounce":"none"}},"pages/home/center.html":{"window":{"navigationBarTitleText":"个人中心","titleNView":{"float":"right","backgroundColor":"#299cfa","autoBackButton":"false","titleColor":"#fff","buttons":[{"float":"right","text":"","fontSize":"20px","fontSrc":"/static/fonts/iconfont.ttf","color":"#fff"}]},"bounce":"none"}},"pages/home/select.html":{"window":{"navigationBarTitleText":"请选择组别","titleNView":{"buttons":[{"text":"确定","color":"#51a5fd","fontSize":"16px"}]}}},"pages/login/index.html":{"window":{"titleNView":"false"}},"pages/toured/index.html":{"window":{"navigationBarTitleText":"蹲点任务列表","titleNView":{"buttons":[{"text":"新增","color":"#51a5fd","fontSize":"16px"}]}}},"pages/toured/select.html":{"window":{"navigationBarTitleText":"请选择地址","titleNView":{"buttons":[{"text":"确定","color":"#51a5fd","fontSize":"16px"}]}}},"pages/contact/index.html":{"window":{"navigationBarTitleText":"联系人"}},"pages/demo/index.html":{"window":{"navigationBarTitleText":"测试","titleNView":{"float":"right","autoBackButton":"false","buttons":[{"text":"确定","fontSize":"14px"},{"float":"left","text":"","fontSize":"26px","fontSrc":"/static/fonts/iconfont.ttf","color":"#ffcb3e"}]}}},"pages/demo/select.html":{"window":{"navigationBarTitleText":"请选择人员","titleNView":{"buttons":[{"text":"确定","color":"#51a5fd","fontSize":"16px"}]}}},"pages/demo/picker.html":{"window":{"navigationBarTitleText":"picker"}}},"global":{"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"}},"tabBar":{"color":"","selectedColor":"","backgroundColor":"","borderStyle":"black","list":[],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","subPackages":[],"pages":["pages/takePic/add","pages/takePic/list","pages/takePic/detail","pages/takePic/select","pages/home/index","pages/home/center","pages/home/select","pages/login/index","pages/toured/index","pages/toured/select","pages/contact/index","pages/demo/index","pages/demo/select","pages/demo/picker"]}
+    </script>
+    <script>
+        var __id__ = '';
+        window.__dispatchGenerateFunc__ = function (page) {
+            __id__ = page;
+            document.title = page;
+            window.history.pushState('', '', page);
+            plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+        };
+    </script>
+    <script src="uniapp://ready"></script>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

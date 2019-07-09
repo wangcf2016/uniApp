@@ -1,0 +1,44 @@
+<template name="dcd483a8">
+  <view class="_view data-v-d686ee0a">
+    <view class="_view data-v-d686ee0a container">
+      <view class="_view data-v-d686ee0a">
+        <view class="_view data-v-d686ee0a topView topViewMargin">
+          <view wx:if="{{signType == 1}}" class="_view data-v-d686ee0a signIn">
+            <view class="_view data-v-d686ee0a signBtn" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">签到</view>
+          </view>
+          <view wx:if="{{signType == 2}}" class="_view data-v-d686ee0a signBack">
+            <view class="_view data-v-d686ee0a signText">08:20已签到</view>
+            <view class="_view data-v-d686ee0a signBtn" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">签退</view>
+          </view>
+          <view wx:if="{{signType == 3}}" class="_view data-v-d686ee0a signOver">
+            <view class="_view data-v-d686ee0a signText">08:20已签到</view>
+            <view class="_view data-v-d686ee0a signText">10:20已签退</view>
+          </view>
+          <view class="_view data-v-d686ee0a checkAddress" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">查看签到记录</view>
+          <view class="_view data-v-d686ee0a iconfont icon-rightLine"></view>
+          <view class="_view data-v-d686ee0a HK"></view>
+        </view>
+        <view class="_view data-v-d686ee0a topView" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-d686ee0a iconfont icon-tuandui"></view>
+          <view class="_view data-v-d686ee0a address">组别</view>
+          <view class="_view data-v-d686ee0a checkAddress">{{selectName || "切换组别"}}</view>
+          <view class="_view data-v-d686ee0a iconfont icon-rightLine"></view>
+          <view class="_view data-v-d686ee0a HK"></view>
+        </view>
+      </view>
+      <view class="_view data-v-d686ee0a foot">
+        <view class="_view data-v-d686ee0a left-foot" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-d686ee0a iconfont icon-home isCheck"></view>
+          <view class="_view data-v-d686ee0a">首页</view>
+        </view>
+        <view class="_view data-v-d686ee0a center-foot" bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-d686ee0a iconfont icon-saomiao"></view>
+        </view>
+        <view class="_view data-v-d686ee0a right-foot" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}">
+          <view class="_view data-v-d686ee0a iconfont icon-my"></view>
+          <view class="_view data-v-d686ee0a">个人中心</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,12 @@
+<template name="98044edc">
+  <view class="_div data-v-15b067a3 container">
+    <view class="_div data-v-15b067a3 iconTop">
+      <image src="../../static/images/login.png" class="_image data-v-15b067a3"></image>
+    </view>
+    <view class="_div data-v-15b067a3 loginForm">
+      <input class="_input data-v-15b067a3 inputName" placeholder="用户名" type="text" bindblur="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+      <input class="_input data-v-15b067a3 inputPassword" placeholder="密码" type="text" bindblur="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" />
+    </view>
+    <view class="_div data-v-15b067a3 loginBtn" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">登录</view>
+  </view>
+</template>

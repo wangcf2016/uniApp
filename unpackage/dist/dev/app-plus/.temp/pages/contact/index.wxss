@@ -1,0 +1,301 @@
+@import "../../common/vendor.wxss";
+
+.content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.title {
+  font-size: 36rpx;
+  color: #8f8f94;
+}
+.index-i {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+}
+.indexlist {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+.indexlist-c {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-animation: show .3s;
+  animation: show .3s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.indexlist-c-b {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  overflow: hidden;
+}
+.indexlist-c-b .c-b-index {
+  padding-left: 20rpx;
+  width: 100%;
+  height: 40rpx;
+  background-color: #f7f5f6;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-size: 26rpx;
+  color: #4b4e4d;
+  line-height: 1;
+}
+.indexlist-c-b .c-b-text {
+  padding-left: 20rpx;
+  padding-right: 40rpx;
+  padding-bottom: 15rpx;
+  padding-top: 15rpx;
+  width: auto;
+  font-size: 30rpx;
+  color: #4b4e4d;
+  line-height: 1;
+}
+.indexlist-c-b scroll-view {
+  height: 100%;
+}
+.indexlist-c-b .b-index {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  background-color: #f7f5f6;
+  width: 40rpx;
+}
+.indexlist-c-b .b-index-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-size: 22rpx;
+  color: #8e9593;
+  line-height: 1;
+}
+.indexlist-c-b .show-index {
+  position: fixed;
+  z-index: 2;
+  width: 200rpx;
+  height: 200rpx;
+  background-color: rgba(0,0,0,0.6);
+  font-size: 80rpx;
+  color: #fff;
+  line-height: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  margin-top: -100rpx;
+  margin-left: -100rpx;
+  border-radius: 50%;
+}
+.indexlist-m {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  -webkit-animation: fadeIn .3s;
+  animation: fadeIn .3s;
+}
+.indexlist .header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 60rpx;
+  border-bottom-width: 1rpx !important;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(235,229,229,0.5);
+}
+.indexlist .header-title {
+  font-size: 32rpx;
+  color: #000;
+  line-height: 1;
+}
+.indexlist .header-i {
+  width: 100rpx;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-size: 24rpx;
+  color: #000;
+  line-height: 1;
+}
+.indexlist .sh {
+  height: 60rpx;
+  border-bottom-width: 1rpx !important;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(235,229,229,0.5);
+}
+.indexlist .sh ._input {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  margin: 0;
+  font-size: 30rpx;
+  color: #4b4e4d;
+  line-height: 1;
+}
+.indexlistshow {
+  -webkit-animation: show .3s;
+  animation: show .3s;
+}
+.indexlisthide {
+  -webkit-animation: hide .3s;
+  animation: hide .3s;
+}
+.indexlistfadein {
+  -webkit-animation: fadeIn .3s;
+  animation: fadeIn .3s;
+}
+.indexlistfadeout {
+  -webkit-animation: fadeOut .3s;
+  animation: fadeOut .3s;
+}
+@-webkit-keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+@-webkit-keyframes fadeOut {
+0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+@keyframes fadeOut {
+0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+@-webkit-keyframes show {
+0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+}
+@keyframes show {
+0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+}
+@-webkit-keyframes hide {
+0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+100% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+}
+@keyframes hide {
+0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+100% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+}

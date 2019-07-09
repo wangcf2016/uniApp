@@ -1,0 +1,65 @@
+<template name="03635d0a">
+  <view class="_view data-v-6000e08c">
+    <view class="_view data-v-6000e08c container">
+      <view class="_view data-v-6000e08c view-one">
+        <view class="_view data-v-6000e08c iconfont icon-edit"></view>
+        <view class="_view data-v-6000e08c">描述您遇到的故障</view>
+      </view>
+      <view class="_view data-v-6000e08c view-two">
+        <textarea maxlength="200" bindblur="handleProxy" placeholder="请输入您所遇到的故障..." data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_textarea data-v-6000e08c" />
+      </view>
+      <view class="_view data-v-6000e08c view-three">
+        <view class="_view data-v-6000e08c view-three-top">
+          <view class="_view data-v-6000e08c iconfont icon-tupian"></view>
+          <view class="_view data-v-6000e08c">添加图片</view>
+        </view>
+        <view class="_view data-v-6000e08c view-three-list">
+          <view class="_view data-v-6000e08c view-three-list-for" wx:if="{{imagesArr.length>0}}" wx:key="index" key="{{index}}" wx:for="{{imagesArr}}" wx:for-index="index" wx:for-item="item">
+            <image src="{{item.url}}" class="_image data-v-6000e08c"></image>
+          </view>
+          <view wx:if="{{imagesArr.length<6}}" class="_view data-v-6000e08c view-three-list-index" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+            <view class="_view data-v-6000e08c iconfont icon-camera"></view>
+            <view class="_view data-v-6000e08c">上传图片</view>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-6000e08c view-yuyin">
+        <view class="_view data-v-6000e08c iconfont icon-audio"></view>
+        <view class="_view data-v-6000e08c">语音留言</view>
+      </view>
+      <view class="_view data-v-6000e08c view-yuyin-content">
+        <view class="_view data-v-6000e08c iconfont icon-yuyinmsg"></view>
+        <view bindtap="handleProxy" class="_view data-v-6000e08c view-yuyin-bg" data-eventid="{{'2'}}" data-comkey="{{$k}}"></view>
+        <view class="_view data-v-6000e08c view-yuyin-text">48</view>
+        <view class="_sub data-v-6000e08c view-yuyin-sub">"</view>
+      </view>
+      <view class="_view data-v-6000e08c view-four">
+        <view class="_view data-v-6000e08c view-four-title">
+          <view class="_view data-v-6000e08c iconfont icon-dizhimore"></view>
+          <view class="_sub data-v-6000e08c">*</view>
+          <view class="_view data-v-6000e08c">选择地点(必填)</view>
+        </view>
+        <view class="_view data-v-6000e08c view-four-check">
+          <view class="_view data-v-6000e08c view-four-check-now">默认选择当前地址:</view>
+          <view class="_view data-v-6000e08c iconfont icon-didian"></view>
+          <view class="_view data-v-6000e08c view-four-check-text">{{selectName || '无人站A大门'}}</view>
+          <view class="_view data-v-6000e08c view-four-check-btn" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">重新选择</view>
+        </view>
+      </view>
+      <view class="_view data-v-6000e08c view-five">
+        <textarea bindblur="handleProxy" placeholder="请输入更具体的位置描述..." data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_textarea data-v-6000e08c" />
+      </view>
+      <view class="_view data-v-6000e08c view-six">
+        <view class="_view data-v-6000e08c iconfont icon-shandian"></view>
+        <view class="_sub data-v-6000e08c">*</view>
+        <view class="_view data-v-6000e08c">紧急程度(必填)</view>
+      </view>
+      <view class="_view data-v-6000e08c view-six-list">
+        <view wx:key="id" key="{{id}}" bindtap="handleProxy" data-eventid="{{'5-'+id}}" data-comkey="{{$k}}" wx:for="{{degreeArr}}" wx:for-index="id" wx:for-item="list" class="_view data-v-6000e08c {{[list.choose ? 'isCheck' : '']}}">{{list.text}}</view>
+      </view>
+      <view class="_view data-v-6000e08c view-seven">
+        <view class="_view data-v-6000e08c iconfont icon-audio" bindtouchstart="handleProxy" bindtouchend="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}"></view>
+      </view>
+    </view>
+  </view>
+</template>

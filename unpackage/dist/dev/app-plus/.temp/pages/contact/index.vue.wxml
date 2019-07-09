@@ -1,0 +1,11 @@
+<import src="/components/indexlist/index.vue.wxml" />
+<template name="fa7a8dee">
+  <view class="_view data-v-420dc7da content">
+    <template bindresult="handleProxy" ref="indexlist0" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="e219bcce"></template>
+    <template bindresult="handleProxy" ref="indexlist1" data-eventid="{{'1'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="e219bcce"></template>
+    <view class="_view data-v-420dc7da index-i">
+      <button bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_button data-v-420dc7da">打开标准格式 indexlist 选择器</button> 返回的值: name:{{indexlist0result.name}} pinyin:{{indexlist0result.pinyin}} </view>
+    <view class="_view data-v-420dc7da index-i">
+      <button bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_button data-v-420dc7da">打开非标准格式 indexlist 选择器</button> 返回的值: name:{{indexlist1result.name}} pinyin:{{indexlist1result.pinyin}} id:{{indexlist1result.id}} </view>
+  </view>
+</template>

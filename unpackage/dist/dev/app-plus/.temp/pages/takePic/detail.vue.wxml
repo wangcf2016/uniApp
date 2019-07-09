@@ -1,0 +1,112 @@
+<template name="3e484c67">
+  <view class="_view data-v-685f17b6">
+    <view class="_view data-v-685f17b6 container">
+      <view class="_view data-v-685f17b6 view-one">
+        <view class="_view data-v-685f17b6 iconfont icon-edit"></view>
+        <view class="_view data-v-685f17b6">故障情况</view>
+      </view>
+      <view class="_view data-v-685f17b6 view-two">
+        <textarea class="_textarea data-v-685f17b6 detail-textarea" disabled="true" placeholder="{{textValue}}" placeholder-style="color:#333" />
+      </view>
+      <view class="_view data-v-685f17b6 view-three">
+        <view class="_view data-v-685f17b6 view-three-top">
+          <view class="_view data-v-685f17b6 iconfont icon-tupian"></view>
+          <view class="_view data-v-685f17b6">实拍图片</view>
+        </view>
+        <view class="_view data-v-685f17b6 view-three-list">
+          <view class="_view data-v-685f17b6 view-three-list-for" wx:if="{{imagesArr.length>0}}" wx:key="index" key="{{index}}" wx:for="{{imagesArr}}" wx:for-index="index" wx:for-item="item">
+            <image src="{{item.url}}" class="_image data-v-685f17b6"></image>
+          </view>
+        </view>
+      </view>
+      <view class="_view data-v-685f17b6 view-yuyin">
+        <view class="_view data-v-685f17b6 iconfont icon-audio"></view>
+        <view class="_view data-v-685f17b6">语音留言</view>
+      </view>
+      <view class="_view data-v-685f17b6 view-yuyin-content">
+        <view class="_view data-v-685f17b6 iconfont icon-yuyinmsg"></view>
+        <view bindtap="handleProxy" class="_view data-v-685f17b6 view-yuyin-bg" data-eventid="{{'0'}}" data-comkey="{{$k}}"></view>
+        <view class="_view data-v-685f17b6 view-yuyin-text">48</view>
+        <view class="_sub data-v-685f17b6 view-yuyin-sub">"</view>
+      </view>
+      <view class="_view data-v-685f17b6 view-four">
+        <view class="_view data-v-685f17b6 view-four-title">
+          <view class="_view data-v-685f17b6 iconfont icon-didian"></view>
+          <view class="_view data-v-685f17b6">故障地点</view>
+        </view>
+        <view class="_view data-v-685f17b6 view-four-check">
+          <view class="_view data-v-685f17b6 view-four-check-now">默认选择当前地址:</view>
+          <view class="_view data-v-685f17b6 iconfont icon-didian"></view>
+          <view class="_view data-v-685f17b6 view-four-check-text">{{selectName || '无人站A大门'}}</view>
+        </view>
+      </view>
+      <view class="_view data-v-685f17b6 view-five">
+        <textarea disabled="true" placeholder="{{textValue}}" placeholder-style="color:#333" class="_textarea data-v-685f17b6" />
+      </view>
+      <view class="_view data-v-685f17b6 view-six">
+        <view class="_view data-v-685f17b6 iconfont icon-task"></view>
+        <view class="_view data-v-685f17b6">相关情况</view>
+      </view>
+      <view class="_view data-v-685f17b6 view-eight-detail">
+        <view class="_view data-v-685f17b6 view-eight-detail-warp">
+          <view class="_view data-v-685f17b6 view-eight-detail-warp-list">
+            <view class="_view data-v-685f17b6">
+              <view class="_view data-v-685f17b6 record-labal">紧急程度:</view>
+              <view class="_view data-v-685f17b6 record-labal-text1">紧急</view>
+            </view>
+            <view class="_view data-v-685f17b6">
+              <view class="_view data-v-685f17b6 record-labal">上报人:</view>
+              <view class="_view data-v-685f17b6 record-labal-text2">张大山</view>
+            </view>
+            <view wx:if="{{type == '1'}}" class="_view data-v-685f17b6">
+              <view class="_view data-v-685f17b6 record-labal">状态:</view>
+              <view class="_view data-v-685f17b6 record-labal-text3">已完成</view>
+            </view>
+            <view wx:if="{{type !== '1'}}" class="_view data-v-685f17b6">
+              <view class="_view data-v-685f17b6 record-labal">状态:</view>
+              <view class="_view data-v-685f17b6 record-labal-text1">待处理</view>
+            </view>
+            <view wx:if="{{type !== '1'}}" class="_view data-v-685f17b6">
+              <view class="_view data-v-685f17b6 record-labal">分析报告:</view>
+              <view class="_view data-v-685f17b6 record-labal-text1">未上传</view>
+            </view>
+          </view>
+          <view wx:if="{{type == '1'}}" class="_view data-v-685f17b6 view-eight-detail-warp-for" wx:key="index" key="{{index}}" wx:for="{{recordData}}" wx:for-index="index" wx:for-item="item">
+            <view class="_view data-v-685f17b6 view-eight-detail-warp-for-left">
+              <view class="_view data-v-685f17b6 detail-round"></view>
+              <view class="_view data-v-685f17b6 detail-dottedLine {{[index == recordData.length - 1 ? 'boederNone' : '']}}"></view>
+            </view>
+            <view class="_view data-v-685f17b6 view-eight-detail-warp-for-right">
+              <view class="_view data-v-685f17b6">
+                <view class="_view data-v-685f17b6 record-labal-detail">{{item.time}}</view>
+              </view>
+              <view class="_view data-v-685f17b6">
+                <view class="_view data-v-685f17b6">
+                  <view class="_view data-v-685f17b6 record-labal-detail">反馈人:</view>
+                  <view class="_view data-v-685f17b6">{{item.typeText}}</view>
+                </view>
+              </view>
+              <view class="_view data-v-685f17b6">
+                <view class="_view data-v-685f17b6">
+                  <view class="_view data-v-685f17b6 record-labal-detail">说明:</view>
+                  <view class="_view data-v-685f17b6">{{item.msg}}</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view wx:if="{{type !== '1'}}" class="_view data-v-685f17b6 view-nine-detail">
+        <view class="_view data-v-685f17b6 iconfont icon-msg"></view>
+        <view class="_view data-v-685f17b6">相关情况</view>
+      </view>
+      <view wx:if="{{type !== '1'}}" class="_view data-v-685f17b6 view-two">
+        <textarea maxlength="200" bindblur="handleProxy" placeholder="请输入反馈信息..." data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_textarea data-v-685f17b6" />
+      </view>
+      <view class="_view data-v-685f17b6 view-seven-detail">
+        <view wx:if="{{type == '1'}}" class="_view data-v-685f17b6 view-seven-btn" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">下载异常反馈报告</view>
+        <view wx:else class="_view data-v-685f17b6 view-seven-btn" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">提交反馈</view>
+      </view>
+    </view>
+  </view>
+</template>

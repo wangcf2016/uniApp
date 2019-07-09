@@ -1,0 +1,6 @@
+<import src="/components/select/index.vue.wxml" />
+<template name="235a7f7a">
+  <view class="_view data-v-3ab4e36a">
+    <template bindselectSingle="handleProxy" bindselectMore="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="3762d46e"></template>
+  </view>
+</template>
